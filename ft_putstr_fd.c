@@ -1,24 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oba <oba@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: oba@student.42quebec.com <oba@student.42qu +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 14:33:29 by oba               #+#    #+#             */
-/*   Updated: 2023/10/31 14:55:50 by oba              ###   ########.fr       */
+/*   Created: 2023/11/07 12:26:37 by oba@student.42qu  #+#    #+#             */
+/*   Updated: 2023/11/07 12:28:58 by oba@student.42qu ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_calloc(size_t count, size_t size)
-{
-	void	*ptr;
-
-	ptr = malloc(count * size);
-	if (ptr == NULL)
-		return (ptr);
-	ft_bzero (ptr, count * size);
-	return (ptr);
-}
