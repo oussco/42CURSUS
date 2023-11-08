@@ -1,27 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ousmane <ousmane@student.42.fr>            +#+  +:+       +#+        */
+/*   By: oba@student.42quebec.com <oba@student.42qu +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/05 12:47:55 by ousmane           #+#    #+#             */
-/*   Updated: 2023/11/06 20:36:57 by ousmane          ###   ########.fr       */
+/*   Created: 2023/11/07 12:26:37 by oba@student.42qu  #+#    #+#             */
+/*   Updated: 2023/11/07 12:28:58 by oba@student.42qu ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strchr(const char *s, int c)
-{
-	char	*s1;
-
-	s1 = (char *)s;
-	while (*s1 != c)
-	{
-		if (*s1 == '\0')
-			return (NULL);
-		s1++;
-	}
-	return (s1);
-}
